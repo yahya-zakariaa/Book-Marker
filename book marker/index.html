@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Book Mark</title>
+  </head>
+  <body>
+    <section id="main-section" class="w-100 vh-100 py-5 bg-light-subtle">
+      <div class="container text-center text-white px-3">
+        <div class="title">
+          <div class="mb-4 mt-5 fw-bolder title-container pb-5 px-5">
+            <h1 class="main-title mb-4 text-black">Bookmarker</h1>
+          </div>
+          <p class="fw-bold fs-4 sub-title text-nowrap">
+            <i class="fa-solid fa-bookmark me-3"></i>Bookmark your favorite
+            sites<i class="fa-solid fa-bookmark ms-3"></i>
+          </p>
+        </div>
+        <div
+          id="Inputs"
+          class="inputs d-flex justify-content-center align-items-center flex-column w-100 px-5 m-auto mb-4 mt-5">
+          <label
+            for="siteInp"
+            class="text-start ms-2 mb-2 text-black fw-bold w-50"
+            ><i class="fa-solid fa-bookmark me-2"></i>Site Name</label
+          >
+          <input
+            id="siteNameInp"
+            class="rounded-2 py-2 px-3 text-black mb-4 w-50"
+            placeholder="Bookmark Name"
+            type="text" />
+          <label
+            for="siteInp"
+            class="text-start ms-2 mb-2 text-black fw-bold w-50"
+            ><i class="fa-solid fa-link me-2"></i>Site URL</label
+          >
+          <input
+            id="siteUrlInp"
+            class="rounded-2 py-2 px-3 text-black mb-5 w-50"
+            placeholder="Website URL"
+            type="text" />
+          <button id="submiteBtn" class="py-2 px-5 rounded-3 text-white">
+            Submite
+          </button>
+        </div>
+        <table class="mainTable text-black m-auto rounded-3 px-2">
+          <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </tr>
+          <tr id="noBookMsg" class="py-5 d-none">
+            <td class="py-5">
+              <h5
+                class="text-nowrap text-black position-absolute start-50 translate-middle-x">
+                you not have a book
+              </h5>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

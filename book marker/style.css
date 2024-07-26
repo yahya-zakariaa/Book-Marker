@@ -1,0 +1,83 @@
+.title-container {
+  border-bottom: 2px dotted black;
+}
+
+.main-title {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  padding: 0 5px;
+  z-index: 2;
+  letter-spacing: 0.5px;
+}
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(172, 172, 0);
+  z-index: -1;
+  transition: all 0.5s;
+}
+.main-title:hover::after {
+  height: 45px;
+}
+.sub-title {
+  color: rgb(3, 96, 3);
+  letter-spacing: 0.5px;
+}
+
+.inputs input {
+  border: 1px solid #dddddd;
+  outline: none;
+}
+
+.inputs {
+  border-bottom: 2px dotted black;
+  padding: 0 0 50px 0;
+  position: relative;
+}
+#submiteBtn {
+  background-color: orangered;
+  width: fit-content;
+  outline: none;
+  border: none;
+  margin: auto;
+  border: 1px solid orangered;
+  transition: all 0.5s;
+}
+
+#submiteBtn:hover {
+  border: 1px solid black;
+  background-color: transparent;
+  color: black !important;
+}
+
+.mainTable {
+  background-color: #f1f1f1;
+  width: 80%;
+}
+table.mainTable th {
+  padding: 15px 0;
+  border-bottom: 1px solid black;
+}
+
+table.mainTable td {
+  padding: 20px 0;
+  border-bottom: 1px solid #a4a4a4;
+}
+
+table.mainTable td > button {
+  padding: 5px 10%;
+}
+
+.urlNotValid {
+  top: 160px;
+  font-weight: 600;
+  color: red;
+  left: 50% !important;
+  background-color: transparent !important;
+  border: none !important;
+}
